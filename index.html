@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Animais Marinhos</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(226, 235, 231);
+        }
+        button {
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+            background-color: rgb(207, 245, 232);
+            margin: 5px;
+        }
+        #foto-dinamica {
+            max-width: 400px;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="Tartaruga()">Tartaruga</button>
+    <button onclick="SaibaMaisTart()">Saiba Mais Sobre Tartarugas!</button>
+    <br><br>
+    <button onclick="Golfinho()">Golfinho</button>
+    <button onclick="SaibaMaisGolf()">Saiba Mais Sobre Golfinhos!</button>
+
+    <h1 id="Titulo1">Tartaruga Marinha</h1>
+
+
+    <img id="foto-dinamica" 
+         src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=400" 
+         alt="Foto do animal marinho">
+
+    <p id="Descricao">A tartaruga marinha é um réptil que vive nos oceanos e possui um casco que protege seu corpo.</p>
+
+    <script>
+        function Tartaruga() {
+            document.getElementById("Titulo1").textContent = "Tartaruga Marinha";
+            document.getElementById("foto-dinamica").src = "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=400";
+            document.getElementById("Descricao").textContent = "A tartaruga marinha é um réptil que vive nos oceanos e possui um casco que protege seu corpo.";
+        }
+
+        function Golfinho() {
+            document.getElementById("Titulo1").textContent = "Golfinho";
+            document.getElementById("foto-dinamica").src = "https://www.petz.com.br/blog/wp-content/uploads/2022/06/golfinho-e-mamifero-topo-1-1024x538.webp";
+            document.getElementById("Descricao").textContent = "O golfinho é um mamífero marinho inteligente, ágil e conhecido por viver em grupos.";
+        }
+
+        function SaibaMaisTart() {
+            alert("As tartarugas marinhas respiram pelos pulmões e precisam subir à superfície para respirar.");
+        }
+
+        function SaibaMaisGolf() {
+            alert("Os golfinhos são mamíferos marinhos que utilizam sons para se comunicar e localizar objetos na água.");
+        }
+    </script>
+</body>
+</html>
